@@ -65,17 +65,20 @@
 }
 .wemark_block_code{
 	display: block;
-	padding:10px;
+  padding: 10px;
+  padding-right: 30rpx;
 	font-size:28rpx;
 	line-height: 1.5em;
 	border:1px solid #f0f0f0;
 	white-space: pre;
 	overflow: auto;
 
-	border: 1px solid #ddd;
-	border-radius: 10rpx;
+	border: 2px solid #ddd;
   box-sizing: border-box;
-  box-shadow: 0 0 15rpx #ddd inset;
+  margin: 10rpx 0;
+  background: #eee;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .wemark_block_table{
 	width: 100%;
@@ -138,15 +141,22 @@
 	height:auto;
 }
 .wemark_inline_code{
-	background:#f0f0f0;
-	padding:3px 5px;
-	word-wrap:break-word;
+	/* background:#f0f0f0;
+  padding:3px 5px; */
+  background: #eee;
+  padding: 0 5px;
+  border-radius: 8rpx;
+  word-wrap:break-word;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
 }
 .wemark_inline_text{
 	word-wrap:break-word;
 }
 .wemark_inline_link{
 	display: inline;
-	color: blue;
-	word-wrap:break-word;
+	/* color: blue; */
+  word-wrap: break-word;
+  color: #026e00;
+  font-weight: 400;
 }

@@ -19,8 +19,9 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '随心阅-趣图广场',
-      path: `/pages/square/square`
+      title: '【程序员趣图】',
+      path: `/pages/square/square`,
+      imageUrl: '../../image/card_fun.jpg'
     }
   },
   onLoad(option) {

@@ -37,7 +37,7 @@
       </view>
       <view class="module main-icon more-icon" hover-class="hover">
         <view class="list-icon message"><text class="icon-cnode cnode-mbri-change-style"></text></view>
-        <view class="main-text">客服消息</view>
+        <view class="main-text">和你有话说</view>
         <view class="more-icon"><text class="icon-cnode cnode-you"></text></view>
         <button open-type="contact" type="default" size="default" class="btn-feedback"></button>
       </view>

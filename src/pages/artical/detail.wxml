@@ -12,10 +12,12 @@
             <image class="avatar" src="{{detail.author.avatar_url}}" mode="aspectFill" data-url="{{detail.author.avatar_url}}" bindtap="previewImage" />
             <view class="reply-inner">
               <view class="loginname">作者: {{detail.author.loginname}}</view>
-              <view class="reply-time">回复 {{detail.reply_count}} | 浏览 {{detail.visit_count}}</view>
-              <view class="reply-time">发布时间: {{detail.createTime}}</view>
-              <view class="reply-time">最后回复: {{detail.lastReplyTime}}</view>
+              <view class="reply-time">回复 {{detail.reply_count}}　　　浏览 {{detail.visit_count}}</view>
             </view>
+          </view>
+          <view class="artical-times">
+            <view class="reply-time"><text class="field">发布时间:</text> {{detail.createTime}}</view>
+            <view class="reply-time"><text class="field">最后回复:</text> {{detail.lastReplyTime}}</view>
           </view>
         </view>
 
@@ -32,7 +34,7 @@
       </view>
 
       <!-- 评论模块 -->
-      <view class="reply-title">评论列表({{detail.reply_count}}/{{detail.visit_count}})</view>
+      <view class="reply-title">评论列表<text wx:if="{{detail.replies.length > 0}}">({{detail.reply_count}})</text></view>
       <view class="reply-content">
         <!-- 无数据 -->
         <view wx:if="{{detail.replies.length === 0}}" class="page-no-data">
