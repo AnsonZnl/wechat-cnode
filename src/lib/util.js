@@ -57,30 +57,17 @@ const util = {
     return sb.join('') + '前';
   },
 
+  // 帖子版块
+  listTabs: {
+    'all': '全部',
+    'good': '精华',
+    'share': '分享',
+    'ask': '问答',
+    'job': '招聘'
+  },
   // 帖子分类 tab转意
-  tabToWord: (tab) => {
-    let result = '';
-    switch (tab) {
-      case 'good':
-        result = '精选';
-        break;
-      case 'ask':
-        result = '问答';
-        break;
-      case 'share':
-        result = '分享';
-        break;
-      case 'job':
-        result = '招聘';
-        break;
-      case 'dev':
-        result = '测试';
-        break;
-      default:
-        result = '全部分类';
-        break;
-    }
-    return result;
+  tabToWord: function (tab) {
+    return this.listTabs[tab] || '全部';
   },
 
   // 获取自定义导航部分数据: 单位px

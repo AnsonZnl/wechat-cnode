@@ -47,7 +47,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  .language-css .wemark_inline_code_string,
  .style .wemark_inline_code_string {
 	 color: #9a6e3a;
-	 background: hsla(0, 0%, 100%, .5);
+	/* background: hsla(0, 0%, 100%, .5); */
  }
 
  .wemark_inline_code_atrule,

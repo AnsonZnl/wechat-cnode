@@ -12,9 +12,9 @@ Page({
   },
   onShareAppMessage(res) {
     return {
-      title: 'Node精选文章随心阅',
-      imageUrl: '../../image/share_node.jpg',
-      path: '/pages/artical/list?tab=good'
+      title: '【CNode社区好文推荐】',
+      path: '/pages/artical/list?tab=good',
+      imageUrl: '../../image/card_posts.jpg'
     }
   },
   onLoad() {},
@@ -147,7 +147,7 @@ Page({
   loginTip() {
     wx.showModal({
       title: '登录说明',
-      content: '本小程序数据来自 https://cnodejs.org 站点，目前仅支持扫码登录。用户需先登录cnodejs.org站点PC端后，在设置页面可以看到自己的 accessToken。再点击小程序中个人中心登录按钮，以扫码的形式登录即可登录成功。',
+      content: '请在CNode社区网站端，登录你的账号。然后在设置页面可以看到自己的 accessToken。通过本小程序扫码的形式登录即可登录成功。',
       showCancel: false,
       success(res) {
         if (res.confirm) {

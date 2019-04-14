@@ -1,6 +1,6 @@
 const storage = require('../../lib/storage');
 const util = require('../../lib/util');
-const CLunar = require('../../npm/chinese-lunar');
+const CLunar = require('../../lib/chinese-lunar');
 
 const app = getApp();
 const { contentHeight, barTitleHeight } = util.getNavigationData();
@@ -18,8 +18,9 @@ Page({
     pageCards: [{ // 卡片列表
       name: 'artical',
       text: '帖子列表',
-      icon: 'cnode-logo',
-      style: 'font-size: 36rpx; color: #026e00;',
+      icon: 'cnode-node',
+      // icon: 'cnode-logo',
+      style: 'font-size: 80rpx; color: #026e00;',
       desc: 'Node知识分享、行业招聘、精选热帖等，技术路上我们同在。'
     }, {
       name: 'square',
@@ -31,8 +32,9 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '随心阅',
-      path: `/pages/index/index`
+      title: 'Node随心阅',
+      path: `/pages/index/index`,
+      imageUrl: '../../image/card_node.jpg'
     }
   },
   onLoad() {

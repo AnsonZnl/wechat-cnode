@@ -1,6 +1,10 @@
 {
-  "dependencies": {
-    "chinese-lunar": "0.1.4",
-    "regenerator": "0.13.3"
-  }
+  "name": "wechat-cnode",
+  "version": "1.0.04",
+  "description": "cnode社区小程序客户端",
+  "main": "app.js",
+  "repository": "https://github.com/aoxiaoqiang/wechat-cnode",
+  "author": "aoxiaoqiang",
+  "license": "MIT",
+  "dependencies": {}
 }

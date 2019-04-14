@@ -9,6 +9,7 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"uglifyFileName": false
 	},
@@ -38,13 +39,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 5,
 			"list": [
 				{
 					"id": 0,
 					"name": "+ 详情",
 					"pathName": "pages/artical/detail",
-					"query": "id=5bd4772a14e994202cd5bdb7",
+					"query": "id=5cb00e31dad66d658e40842b",
 					"scene": null
 				},
 				{
@@ -73,6 +74,13 @@
 					"name": "我的",
 					"pathName": "pages/personal/personal",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "+ 详情1",
+					"pathName": "pages/artical/detail",
+					"query": "id=5ca2dc5631010b2dfbb4222f",
 					"scene": null
 				}
 			]
