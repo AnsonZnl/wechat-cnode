@@ -1,7 +1,7 @@
-const fetch = require('./lib/fetch');
+const myfetch = require('./lib/myfetch');
 const storage = require('./lib/storage');
 
-wx.fetch = fetch;
+wx.fetch = myfetch;
 
 /** 安全跳转 */
 wx.safeNavigateTo = (obj) => {

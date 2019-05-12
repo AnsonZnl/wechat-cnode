@@ -1,6 +1,7 @@
 module.exports = {
   // 应用中所有需要本次存储的key, 统一集中处理方便排查
   keys: {
+    indexListType: 'indexListType', // 帖子主题
     listtab: 'listtab', // 帖子主题
     listRotateAnimation: 'listRotateAnimation', // 首页列表卡片动画是否开启
     readLoc: 'readLoc', // 阅读位置笔记 { id, top }

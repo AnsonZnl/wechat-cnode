@@ -1,50 +1,52 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/personal/personal",
-    "pages/personal/collection",
-    "pages/square/square",
-    "pages/artical/list",
-    "pages/artical/detail",
-    "pages/lib/lib",
-    "pages/about/about"
-  ],
-  "window":{
-    "navigationBarBackgroundColor": "#eee",
-    "navigationBarTitleText": "NodeJS前端速报",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom",
-    "backgroundTextStyle": "dark",
-    "backgroundColor": "#eeeeee"
-  },
-  "tabBar": {
-    "backgroundColor": "#F8F8FA",
-    "borderStyle": "white",
-    "color": "#bfbfbf",
-    "selectedColor": "#026e00",
-    "list": [{
-        "pagePath": "pages/index/index",
-        "iconPath": "image/tab/workset.png",
-        "selectedIconPath": "image/tab/workset_active.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/personal/personal",
-        "iconPath": "image/tab/personal.png",
-        "selectedIconPath": "image/tab/personal_active.png",
-        "text": "我的"
-      }
-    ]
-  },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "usingComponents": {
-    "loading": "./components/loading/loading",
-    "navigation-bar": "./components/navigation-bar/index"
-  },
-  "navigateToMiniProgramAppIdList": [
-    "wx27d20205249c56a3"
-  ]
+	"pages": [
+		"pages/index/index",
+		"pages/personal/personal",
+		"pages/personal/collection",
+		"pages/square/square",
+		"pages/artical/list",
+		"pages/artical/detail",
+		"pages/lib/lib",
+		"pages/about/about"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#eee",
+		"navigationBarTitleText": "NodeJS前端速报",
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"backgroundTextStyle": "dark",
+		"backgroundColor": "#eeeeee"
+	},
+	"tabBar": {
+		"backgroundColor": "#F8F8FA",
+		"borderStyle": "white",
+		"color": "#bfbfbf",
+		"selectedColor": "#026e00",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "image/tab/workset.png",
+				"selectedIconPath": "image/tab/workset_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"iconPath": "image/tab/personal.png",
+				"selectedIconPath": "image/tab/personal_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"downloadFile": 10000
+	},
+	"usingComponents": {
+		"loading": "./components/loading/loading",
+		"navigation-bar": "./components/navigation-bar/index"
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wx27d20205249c56a3"
+	],
+	"sitemapLocation": "sitemap.json"
 }

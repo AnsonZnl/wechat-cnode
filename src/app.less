@@ -45,9 +45,30 @@ scroll-view {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   transition: all .3s;
   opacity: 0.9;
+  box-shadow: 0 0 10rpx #eee;
+  &.w {
+    display: block;
+    overflow: hidden;
+    .icon-box {
+      display: block;
+      height: 80rpx;
+      width: 80rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      transition: all .6s;
+      &.c {
+        margin-top: 0;
+      }
+      &.s {
+        margin-top: -80rpx;
+      }
+    }
+  }
   .top-img{
     display: block;
     height: 50rpx;
