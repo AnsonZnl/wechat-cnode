@@ -35,3 +35,9 @@
     </view>
   </view>
 </navigation-bar>
+
+<!-- 主题切换 -->
+<view class="page-float-tip w" catchtap="switchTheme">
+  <view class="icon-box {{themeType === 'swiper' ? 's' : 'c'}}"><text class="icon-cnode cnode-mbri-image-slider"></text></view>
+  <view class="icon-box"><text class="icon-cnode cnode-mbri-image-gallery"></text></view>
+</view>

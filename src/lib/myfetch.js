@@ -1,6 +1,6 @@
 // 参考地址: https://developers.weixin.qq.com/miniprogram/dev/api/wx.request.html
 
-const fetch = (options) => {
+const myfetch = (options) => {
   const {
     url,
     data, // 数据类型: string/object/ArrayBuffer
@@ -35,4 +35,4 @@ const fetch = (options) => {
   });
 }
 
-module.exports = fetch;
+module.exports = myfetch;

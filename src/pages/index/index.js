@@ -7,9 +7,11 @@ const { contentHeight, barTitleHeight } = util.getNavigationData();
 
 const dayText = ['日', '一', '二', '三', '四', '五', '六'];
 
+const defaultListType = storage.get(storage.keys.indexListType, true);
+
 Page({
   data: {
-    themeType: 'card', // 首页样式主题
+    themeType: defaultListType || 'card', // 首页样式主题
     swiperMargin: '40rpx',
     contentHeight,
     barTitleHeight,
@@ -17,9 +19,8 @@ Page({
     dateInfo: null, // 日期
     pageCards: [{ // 卡片列表
       name: 'artical',
-      text: '帖子列表',
+      text: 'NodeJS知识',
       icon: 'cnode-node',
-      // icon: 'cnode-logo',
       style: 'font-size: 80rpx; color: #026e00;',
       desc: 'Node知识分享、行业招聘、精选热帖等，技术路上我们同在。'
     }, {
@@ -58,4 +59,10 @@ Page({
     }
     wx.navigateTo({ url });
   },
+  // 切换列表展示方式
+  switchTheme() {
+    let themeType = this.data.themeType === 'card' ? 'swiper' : 'card';
+    storage.set(storage.keys.indexListType, themeType);
+    this.setData({ themeType });
+  }
 })
