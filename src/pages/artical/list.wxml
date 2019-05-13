@@ -18,15 +18,19 @@
         <open-data class="open-data" type="userAvatarUrl"></open-data>
       </view>
     </view>
-    <view class="list-item {{isRealScroll ? 'animate' : ''}}" wx:for="{{list}}" wx:key="{{index}}" data-item="{{item}}" bindtap="toDetail">
-      <view class="content">
-        <block wx:if="{{tabName === '全部分类'}}">{{item.top ? '[置顶]' : ''}} {{item.tabText ? '[' + item.tabText + ']' : ''}} </block>
-        {{item.title}}
-      </view>
-      <wemark md="{{item.summary}}" type="wemark"></wemark>
-      <view class="foot-info">
-        <view class="field"><text class="text-strong">{{item.reply_count}}评论</text> / {{item.visit_count}}浏览</view>
-        <view class="field">{{item.date}}发布</view>
+    <view class="list-item {{isRealScroll ? 'animate' : ''}}" wx:for="{{list}}" wx:key="{{index}}">
+      <view data-item="{{item}}" bindtap="toDetail">
+        <view class="content">
+          <block wx:if="{{tabName === '全部分类'}}">{{item.top ? '[置顶]' : ''}} {{item.tabText ? '[' + item.tabText + ']' : ''}} </block>
+          {{item.title}}
+        </view>
+        <wemark md="{{item.summary}}" type="wemark"></wemark>
+        <view class="foot-info">
+          <view class="field"><text class="text-strong">{{item.reply_count}}评论</text> / {{item.visit_count}}浏览</view>
+          <view class="field">{{item.date}}发布</view>
+        </view>
+
+        <view class="ad-box" wx:if="{{index > 2 && index%23 === 1}}"><ad unit-id="adunit-bc9f51b6adb9bb48"></ad></view>
       </view>
     </view>
 

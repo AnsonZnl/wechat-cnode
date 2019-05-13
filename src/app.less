@@ -50,22 +50,27 @@ scroll-view {
   opacity: 0.9;
   box-shadow: 0 0 10rpx #eee;
   &.w {
+    height: 100rpx;
+    width: 100rpx;
     display: block;
     overflow: hidden;
     .icon-box {
       display: block;
-      height: 80rpx;
-      width: 80rpx;
+      height: 100rpx;
+      width: 100rpx;
       display: flex;
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
       transition: all .6s;
+      .icon-cnode {
+        font-size: 46rpx;
+      }
       &.c {
         margin-top: 0;
       }
       &.s {
-        margin-top: -80rpx;
+        margin-top: -100rpx;
       }
     }
   }

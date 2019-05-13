@@ -11,22 +11,25 @@
 
     <view class="reply-content">
       <view class="reply-item" wx:for="{{list}}" wx:key="{{index}}">
-        <!-- <image class="avatar" src="{{item.img}}" mode="aspectFill"/> -->
-        <view class="time-pannel">
-          <text class="day">{{item.day}}</text>
-          <view class="month">
-            <text>{{item.month}}</text>
-            <text>月</text>
+        <view wx:if="{{index === 8 || index === 17}}" class="ad-box"><ad unit-id="adunit-79e9836e7a2287f8"></ad></view>
+        <view wx:elif="{{index === 20 || index === 25}}" class="ad-box"><ad unit-id="adunit-43a58337e7bbfab5"></ad></view>
+        <block wx:else>
+          <view class="time-pannel">
+            <text class="day">{{item.day}}</text>
+            <view class="month">
+              <text>{{item.month}}</text>
+              <text class="text-month">月</text>
+            </view>
           </view>
-        </view>
-        <view class="reply-inner">
-          <view class="loginname">{{item.author}}</view>
-          <view class="content-text">{{item.title}}</view>
-          <view class="content-image">
-            <image src="{{item.img}}" mode="widthFix" data-url="{{item.img}}" bindtap="previewImage"/>
+          <view class="reply-inner">
+            <view class="loginname">{{item.author}}</view>
+            <view class="content-text">{{item.title}}</view>
+            <view class="content-image">
+              <image src="{{item.img}}" mode="widthFix" data-url="{{item.img}}" bindtap="previewImage"/>
+            </view>
+            <view class="reply-time">{{item.createTime}}</view>
           </view>
-          <view class="reply-time">{{item.createTime}}</view>
-        </view>
+        </block>
       </view>
     </view>
 
